@@ -44,3 +44,17 @@ describe('memoTimes10', () => {
         expect(caching.memoTimes10(100)).toBe(1000);
     });
 });
+
+describe('memoizedClosureTimes10', () => {
+    it('is defined', () => {
+        expect(caching.memoizedClosureTimes10).toBeDefined();
+    });
+
+    it('multiplies input by 10', () => {
+        const times10 = caching.memoizedClosureTimes10();
+        expect(caching.times10(2)).toBe(20);
+        expect(caching.times10(20)).toBe(200);
+        expect(caching.times10(5)).toBe(50);
+        expect(caching.times10(100)).toBe(1000);
+    });
+});

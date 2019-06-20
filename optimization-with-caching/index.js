@@ -7,7 +7,8 @@ module.exports = {
     uniqSort,
     factorial,
     times10,
-    memoTimes10
+    memoTimes10,
+    memoizedClosureTimes10
 };
 
 function uniqSort(arr) {
@@ -45,4 +46,21 @@ function memoTimes10(n){
     }
 
     return cache[n];
+};
+
+// Task 3: Clean up your global scope by moving your cache inside your function.
+// protip: Use a closure to return a function that you can call later.
+
+function memoizedClosureTimes10 () {
+    let closureCache = {};
+
+    return (n) => {
+        if (closureCache[n]){
+            return closureCache[n];
+        } else {
+            closureCache[n] = n * 10;
+        }
+
+        return closureCache[n];
+    };
 };
