@@ -1,0 +1,23 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "Data structures and algorithms in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louismagdaleno/DSA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louismagdaleno/DSA/issues"
+  },
+  "homepage": "https://github.com/louismagdaleno/DSA#readme",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
