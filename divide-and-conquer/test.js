@@ -6,6 +6,7 @@ describe('linearSearch', () => {
     });
 
     it('returns true when item is found', () => {
-        expect(conquer.linearSearch([2,6,7,90,103], 90)).toBe(true);
+        expect(conquer.linearSearch([2,6,7,90,103], 90)).toBe(3);
     });
 });
+

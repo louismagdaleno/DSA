@@ -10,6 +10,10 @@ function linearSearch(list, item){
             index = i;
         }
     })
+
+    return index;
 }
 
-function bubbleSort
+function bubbleSort(){
+
+}
